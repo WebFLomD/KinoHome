@@ -1,0 +1,61 @@
+.main-posts{
+    margin: 40px;
+}
+
+.block-info-poster-filme{
+    display: flex;
+    height: auto;
+
+    img{
+        max-width: 200px;
+        height: auto;
+    }
+}
+
+.info-title-poster-filme{
+    margin-left: 40px;
+
+    p{
+        color: rgb(255, 255, 255, 70%);
+        font-size: 16px;
+        margin: 5px 0;
+    }
+}
+
+.btn-title-filme{
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        font-size: 44px;
+        font-weight: 600;
+
+        color: var(--color-white);
+    }
+}
+
+.btn-post-report-save-pay{
+    a{
+        text-decoration: none;
+        background-color: var(--background-btn);
+        color: var(--color-white);
+        border-radius: 8px;
+    }
+}
+
+.icon-btn{
+    padding: 13px 20px;
+}
+
+.btn-pay-vip{
+    padding: 13px 20px;
+}
+
+.fa-solid, .fa-regular{
+    margin: auto;
+    font-size: 15px;
+}
+
+.description-poster{
+    text-align: justify;
+}

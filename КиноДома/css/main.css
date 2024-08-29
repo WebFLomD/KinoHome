@@ -1,0 +1,190 @@
+/* Слайдер фильмов */
+.popular-poster{
+    display: none;
+     
+}
+
+.popular-poster.active{
+    display: block;
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+
+    margin-bottom: 30px;
+    transition: .5s;
+}
+
+.popular-poster img{
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.caption {
+    position: absolute;
+
+    bottom: 300px;
+    left: 140px;
+    padding: 20px;
+}
+
+.caption p {
+    width: 700px;
+    font-size: 22px;
+    text-align: justify;
+    color: var(--color-white);
+    margin: 25px 0;
+}
+
+.caption a {
+    display: inline-block;
+    background-color: var(--background-btn);
+    padding: 10px 25px;
+
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+
+    border-radius: 5px;
+
+    &:hover{
+        background-color: rgb(117, 0, 47);
+        transition: .3s;
+    }
+}
+
+.transitions-popular-poster{
+    display: flex;
+    justify-content: center;
+}
+
+.dot{
+    margin: 0 5px;
+
+    background-color: var(--color-grey);
+    border-radius: 20px;
+
+    width: 85px;
+    height: 15px;
+
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover{
+        background-color: var(--background-btn);
+        transition: .3s;
+    }
+}
+
+.dot.active{
+    background-color: var(--background-btn);
+}
+
+
+/* Тело страницы */
+.main{
+    margin: 40px;
+}
+
+.text-poster{
+    display: flex;
+
+    align-items: end;
+    justify-content: space-between;
+
+    p{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--color-white);
+    }
+
+    a{
+        font-size: 18px;
+        color: var(--color-white);
+        transition: .3s;
+
+        &:hover{
+            color: #ff013e;
+            transition: .3s;
+        }
+    }
+}
+
+.all-card-poster{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+
+    
+    color: var(--color-white);
+}
+
+.card-poster{
+    width: 255px;
+    margin: 30px 0;
+}
+
+.img-card-poster{
+    width: 255px;
+
+    object-fit: cover;
+}
+
+.title-text-card-poster{
+    margin-top: 10px;
+}
+
+.title-poster{
+    font-size: 17px;
+    font-weight: 400;
+
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.free, .no-free, .description{
+    margin-top: 5px;
+    font-size: 14px;
+    color: var(--color-white);
+
+    cursor: default;
+}
+
+.free{
+    color: var(--color-raspberry);
+}
+
+.no-free, .description{
+    text-align: justify;
+    color: var(--color-grey);
+}
+
+.btn-watch-now{
+    display: block;
+    text-align: center;
+
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+
+    width: auto;
+    padding: 15px 40px;
+    margin-top: 10px;
+
+    color: var(--color-deep-sea);
+
+    border: 2px solid var(--color-deep-sea);
+    border-radius: 10px;
+
+    transition: .3s;
+
+    &:hover{
+        background-color: var(--color-deep-sea);
+        color: var(--color-white);
+        transition: .3s;
+    }
+}
